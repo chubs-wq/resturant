@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resturant.css" />
     <title>resturant practice with flex box</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- THE FIRST SECTION (the navigation)  -->
@@ -16,17 +34,21 @@
           <h1>Figo</h1>
 
           <ul class="navigation-style">
-            <li><a href="#home-page">Home</a></li>
-            <li><a href="#menu-page"> Menu</a></li>
-            <li><a href="#history-page">Service</a></li>
-            <li><a href="#sign-in-page">Sign in</a></li>
-            <li><a href="">cart logo</a></li>
+            <li><a href="#home-page" class="home-link">Home</a></li>
+            <li><a href="#menu-page" class="home-link"> Menu</a></li>
+            <li><a href="#history-page" class="home-link">Service</a></li>
+            <li><a href="#sign-in-page" class="home-link">Sign in</a></li>
+            <li>
+              <a href="" class="home-link"
+                ><span class="material-symbols-outlined ">local_mall</span></a
+              >
+            </li>
           </ul>
         </div>
 
         <!-- THE LANIDNG PAGE  -->
         <div id="landing-page">
-          <div>
+          <div class="landing-page-side side1">
             <h1 class="figo-head">All in Good Taste With Figo.</h1>
             <p class="figo-information">
               Quickly predominent standard compliant architecture and may have
@@ -39,7 +61,9 @@
             />
             <button class="figo-btn">Get Started</button>
           </div>
-          <img src="./images/pizza.png" alt="" class="pizza-img" />
+          <div class="landing-page-side side2">
+            <img src="./images/pizza.png" alt="" class="pizza-img" />
+          </div>
         </div>
       </div>
     </div>
@@ -47,13 +71,12 @@
     <!-- THE SECOND SECTION (the landing page)  -->
     <div class="container" id="home-page">
       <div class="welcome-page">
-        <img src="./images/chef.png" alt="chef-imgage" class="chef-img" />
-        <div class="right-side flex">
+        <div class="left-side">
+          <img src="./images/chef.png" alt="chef-imgage" class="chef-img" />
+        </div>
+        <div class="right-side">
           <h4 class="yellow-heading">Welcome</h4>
-          <h2 class="welcome-text">
-            Welcome to Figo <br />
-            Resturant
-          </h2>
+          <h2 class="welcome-text">Welcome to Figo Resturant</h2>
           <p class="welcome-paragraph">
             Quickly predominate standards compliants architectures and
             prospective internal or "organic" sources. Synergistically mesh
@@ -113,39 +136,44 @@
       </div>
 
       <div class="menu-card-flexbox">
-        <div>
-          <ul class="food-menu">
-            <li class="list-food-hover">Breakfast</li>
-            <li class="list-food-hover">Lunch</li>
-            <li class="list-food-hover">Dinner</li>
-            <li class="list-food-hover">Desert</li>
-            <li class="list-food-hover">Soups</li>
-            <li class="list-food-hover">Drinks</li>
-          </ul>
-        </div>
+        <ul class="food-menu">
+          <li class="list-food-hover">Breakfast</a></li>
+          <li class="list-food-hover">Lunch</li>
+          <li class="list-food-hover">Dinner</li>
+          <li class="list-food-hover">Desert</li>
+          <li class="list-food-hover">Soups</li>
+          <li class="list-food-hover">Drinks</li>
+        </ul>
 
-        <div class="menu-card">
-          <img src="./images/chicken.png" alt="" style="width: 200px" />
-          <h2>Chicken Massala</h2>
-          <h3 class="menu-price">$100</h3>
-        </div>
-        <div class="menu-card">
-          <img src="./images/western.png" alt="" style="width: 200px" />
-          <h2>Western Suprise</h2>
-          <h3 class="menu-price">$100</h3>
-        </div>
-        <div class="menu-card">
-          <img src="./images/sandwich.png" alt="" style="width: 200px" />
-          <h2>Sandwich Soup</h2>
-          <h3 class="menu-price">$100</h3>
+        <div class="food-items">
+          <!-- <div class="menu-card">
+            <img src="./images/chicken.png" alt="" style="width: 200px" />
+            <h2>Chicken Massala</h2>
+            <h3 class="menu-price">$100</h3>
+          </div>
+          <div class="menu-card">
+            <img src="./images/western.png" alt="" style="width: 200px" />
+            <h2>Western Suprise</h2>
+            <h3 class="menu-price">$100</h3>
+          </div>
+          <div class="menu-card">
+            <img src="./images/sandwich.png" alt="" style="width: 200px" />
+            <h2>Sandwich Soup</h2>
+            <h3 class="menu-price">$100</h3>
+          </div> -->
         </div>
       </div>
-    </div>
+
+      <!-- <div class="pagination">
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+      </div> -->
+    </div> 
 
     <!-- THE FIFTH SECTION (the history page)  -->
     <div class="container" id="history-page">
       <div class="history-flexbox">
-        <div class="flex">
+        <div class="flex side-history">
           <h3 class="yellow-heading">History of Figo</h3>
           <h2 class="welcome-text">We Cook Tradition & Family Recepies</h2>
           <p class="welcome-paragraph">
@@ -160,8 +188,8 @@
           </p>
           <button class="welcome-page-btn">Explore Our Story</button>
         </div>
-        <div>
-          <img src="./images/burger.png" alt="" style="width: 500px" />
+        <div class="side-history">
+          <img src="./images/burger.png" alt="" />
         </div>
       </div>
     </div>
@@ -225,7 +253,7 @@
           <div class="footer-links">
             <h2 class="footer-head">Figo</h2>
             <p class="footer-paragraph">
-              Don't miss to subscribe <br />
+              Don't miss to subscribe 
               to our new feeds, Kindly fill the form bellow.
             </p>
           </div>
@@ -252,5 +280,6 @@
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

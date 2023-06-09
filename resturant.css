@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -36,12 +40,21 @@
 li {
   list-style: none;
 }
-a{
+.home-link {
   text-decoration: none;
-  color: #000;
+  color: #333;
+  padding-bottom: 5px;
+  border-bottom: solid 2px transparent;
+  transition: 0.4s;
+}
+
+.home-link:hover {
+  border-bottom-color: #639d2b;
 }
 
 .navigation-style {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
   display: flex;
   justify-content: space-between;
 }
@@ -59,12 +72,9 @@ a{
   /* border: 2px solid coral; */
 }
 
-.pizza-img {
-  width: 500px;
-}
-
 .figo-head {
   font-size: 4.25rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 .figo-information {
   font-size: 1.25px;
@@ -94,98 +104,117 @@ a{
 
 /* WELCOME TO FIGO PAGE  */
 
-.chef-img {
+/* .chef-img {
   width: 480px;
-}
+} */
 
 .welcome-page {
   display: flex;
   padding-bottom: 100px;
 }
 
+.right-side,
+.left-side {
+  flex: 1;
+}
+.left-side {
+  padding-right: 20px;
+}
+
 .right-side {
-  margin-left: 50px;
+  padding-left: 20px;
 }
 
-.yellow-heading{
-    color: #febd00;
-    font-size: 28px;
+.yellow-heading {
+  color: #febd00;
+  font-size: 28px;
+  font-family: "Cookie", cursive;
 }
 
-.welcome-text{
-    font-size: 1.75rem;
+.welcome-text {
+  font-size: 1.75rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.welcome-paragraph{
-    font-size: 1.25rem;
-    line-height: 1.5;
+.welcome-paragraph {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 }
 
-.welcome-page-btn{
-    height: 50px;
-    padding: 0 40px;
-    background-color: #639d2b;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1.25rem;
+.welcome-page-btn {
+  height: 50px;
+  padding: 0 40px;
+  background-color: #639d2b;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.25rem;
 }
 
 /* REASON TO CHOOSE US PAGE  */
-.reasons-head{
-    text-align: center;
+.reasons-head {
+  text-align: center;
 }
-.why-choose{
-    font-size: 2.1875rem;
-    padding: 17px 0;
-}
-
-.card-img{
-    width: 70px;
-    padding-bottom: 20px;
+.why-choose {
+  font-size: 2.1875rem;
+  padding: 17px 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.card-flexbox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 100px;
+.card-img {
+  width: 70px;
+  padding-bottom: 20px;
 }
 
-.card-text{
-    text-align: center;
-    width: 200px;
+.card-flexbox {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 300px;
-    /* border: 2px red solid; */
-    height: 270px;
-    border-radius: 7px;
-    background-color: #f8fbf5;
-    transition: 0.4s;
+.card-text {
+  text-align: center;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
 }
 
-.card:hover{
-    background-color: #fff;
-    border-bottom: 5px solid #639d2b;
-    box-shadow: 5px 2px 10px #d8d8d8;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  /* border: 2px red solid; */
+  height: 270px;
+  border-radius: 7px;
+  background-color: #f8fbf5;
+  transition: 0.4s;
+  margin: 5px;
 }
 
+.card h2 {
+  text-align: center;
+}
+
+.card:hover {
+  background-color: #fff;
+  border-bottom: 5px solid #639d2b;
+  box-shadow: 5px 2px 10px #d8d8d8;
+}
 
 /* EXPLORE OUR MENU PAGE  */
-.menu-card-flexbox{
+.menu-card-flexbox {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding-bottom: 100px;
   padding-top: 30px;
 }
-.menu-card{
+.menu-card {
   /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
@@ -193,71 +222,91 @@ a{
   align-items: center;
   height: 300px;
   border-radius: 8px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9rem;
   box-shadow: 0 2px 2px 2px #ececec;
   transition: 0.4s;
-
 }
-.menu-card:hover{
+.menu-card:hover {
   border-bottom: 5px solid #639d2b;
   box-shadow: 0 2px 2px 5px #ececec;
 }
 
-.menu-price{
-  color: #59882B;
+.menu-price {
+  color: #59882b;
 }
 
-.food-menu{
+.food-items {
+  display: flex;
+  grid-gap: 20px;
+}
+
+.food-menu {
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 200px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #979797;
+  font-family: "Poppins", sans-serif;
 }
-.list-food-hover:hover{
+
+.list-food-hover {
+  transition: 0.4s;
+  padding-left: 5px;
+  border-left: 2px solid transparent;
+}
+.list-food-hover:hover {
   color: #febd00;
-  border-left: 2px solid #FEBD00;
-  padding-left:5px ;
+  border-color: #febd00;
   cursor: pointer;
+  transform: scale(1.1);
+  transform-origin: left;
 }
 
 /* HISTORY PAGE  */
-.history-flexbox{
+.history-flexbox {
   display: flex;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.side-history {
+  flex: 1;
 }
 
 /* NEWS PAGE  */
-.news-card-flex{
+.news-card-flex {
   display: flex;
   padding-bottom: 100px;
 }
 
-.news-img{
-  width: 350px;
-}
+/* .news-img {
+  max-width: 350px;
+} */
 
-.news-card{
+.news-card {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 380px;
   align-items: start;
-  margin:0 15px;
+  margin: 0 15px;
   border-radius: 5px;
   box-shadow: 0 2px 2px 2px #ececec;
 }
-.news-p{
+.news-p {
   font-size: 1.25rem;
 }
 
-.read-more{
+.read-more {
   color: #febd00;
 }
 
 /* SUBSCRIPTION PAGE  */
-.subs-textinput{
+.subs-textinput {
   width: 40%;
   margin-bottom: 100px;
   height: 40px;
@@ -268,35 +317,108 @@ a{
   box-shadow: 0 2px 2px 2px #ececec;
 }
 
-
 /* THE FOOTER  */
-.footer-flexbox{
+.footer-flexbox {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
-.footer-links{
-  height: 200px;
+.footer-links {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  /* height: 200px; */
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 70px 0
+  margin: 70px 0;
 }
-.footer-heading{
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-heading {
   font-size: 1.25rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 10px;
 }
 
-.footer-paragraph{
+.footer-paragraph {
   font-size: 1.125rem;
-}
-.footer-head{
-  font-size: 1.875rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
 }
 
-.footer-img{
+.footer-head {
+  font-size: 1.875rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+.footer-img {
   width: 150px;
 }
-.slant{
+.slant {
   transform: rotate(-30deg);
 }
+
+
+
+/* Media queries */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  body {
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 958.98px) {
+  .figo-head {
+    font-size: 3.25rem;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .welcome-paragraph {
+    font-size: 1rem;
+  }
+
+  .menu-card-flexbox {
+    flex-direction: column;
+  }
+  .food-menu {
+    flex-direction: row;
+    height: initial;
+    margin-bottom: 2rem;
+  }
+
+  .list-food-hover {
+    margin: 0 10px;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+  
+}
+
+.landing-page-side {
+  flex: 1;
+}
+
+.footer-links{
+  margin: 0 20px;
+  flex: 1;
+  /* height: 150px; */
+  height: none;
+}
+
+.footer-paragraph {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
