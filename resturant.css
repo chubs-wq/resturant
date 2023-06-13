@@ -501,8 +501,10 @@ flex-direction: column;
   }
 
   .welcome-paragraph {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
+
+  
 
   .menu-card-flexbox {
     flex-direction: column;
