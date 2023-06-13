@@ -72,6 +72,10 @@ li {
   /* border: 2px solid coral; */
 }
 
+.logo{
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .figo-head {
   font-size: 4.25rem;
   font-family: "Josefin Sans", sans-serif;
@@ -127,12 +131,12 @@ li {
 
 .yellow-heading {
   color: #febd00;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: "Cookie", cursive;
 }
 
 .welcome-text {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -241,6 +245,13 @@ li {
   grid-gap: 20px;
 }
 
+.food-sides{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+}
+
 .food-menu {
   height: 300px;
   display: flex;
@@ -251,6 +262,7 @@ li {
   color: #979797;
   font-family: "Poppins", sans-serif;
 }
+
 
 .list-food-hover {
   transition: 0.4s;
@@ -325,6 +337,11 @@ li {
   padding: 20px 0;
 }
 
+.extra-flex{
+  display: flex;
+  flex: 1;
+}
+
 .footer-links {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
@@ -370,8 +387,106 @@ li {
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  body {
+
+  /* head */
+  #navigation {
+    display: flex;
+    flex-direction: column;
+    width: auto;
   }
+  .logo{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+  }
+
+  .figo-text{
+    width: 180px;
+    margin-bottom: 15px;
+  }
+
+/* welcome page  */
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.chef-img{
+  margin-bottom: 20px;
+}
+
+.welcome-paragraph {
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.welcome-page-btn{
+  font-size:1rem ;
+  padding: 0 15px;
+}
+
+/* history of figo page */
+.history-flexbox{
+  flex-direction: column-reverse;
+}
+ 
+.side-history{
+  margin-top: 10px;
+}
+.welcome-text{
+ margin: 10px 0;
+}
+
+/* news page  */
+.news-card-flex{
+flex-direction: column;
+}
+
+.news-card{
+  margin: 10px 20px;
+  border: #59882b solid 2px;
+  box-shadow: none;
+  
+}
+
+/* subscription page  */
+.subs-textinput{
+  width: 70%;
+}
+
+
+  .card-flexbox {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  /* menu page  */
+
+  .food-items {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .food-sides{
+    flex-direction: column;
+    margin: 0 50px;
+  }
+
+
+  /* footer  */
+  .footer-img{
+    display: none;
+  }
+
+  .extra-flex{
+    flex-direction: column;
+  }
+
+  
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -398,6 +513,16 @@ li {
     margin-bottom: 2rem;
   }
 
+  @media(min-width: 560px){
+     .food-sides{
+    flex-direction: row;
+  }
+  }
+ 
+
+ 
+ 
+
   .list-food-hover {
     margin: 0 10px;
     border-left: none;
@@ -405,6 +530,7 @@ li {
   }
   
 }
+
 
 .landing-page-side {
   flex: 1;
